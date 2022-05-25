@@ -35,23 +35,16 @@ btnNumbers.forEach((item)=>{
     })
 })
 
-
-
-
 btnPoint.addEventListener('click', (e)=>{
     if (point == false ) {
         display.textContent += ".";
         point = true;  
     }   
 })
-
-
 btnClear.addEventListener('click', (e)=>{
     display.textContent= "0";
     point= false;
 })
-
-
 btnBackspace.addEventListener('click' , (e)=>{
     let len = display.textContent.length;
     let last = display.textContent.substring(len -1 , len)
