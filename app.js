@@ -1,10 +1,18 @@
 //watch
 var today = new Date();
-var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+var time = today.getHours() + " : " + today.getMinutes() + " : " + today.getSeconds();
 document.querySelector(".times").innerHTML = time ;
 
 
+
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("lightmode");
+ }
+
+
 //calculator
+let historyy = document.querySelector('historyy');
 let display = document.querySelector('.display');
 let btnClear = document.querySelector('.btn__clear');
 let btnBackspace = document.querySelector('.btn__backspace');
@@ -16,6 +24,7 @@ let btnEquls = document.querySelector('.btn__equls');
 let btnPoint = document.querySelector('.btn__point');
 let btnPn = document.querySelector('.btn__pn');
 let btnPercent = document.querySelector('.btn__percent');
+
 
 let btnNumbers = document.querySelectorAll('.btn__number');
 
@@ -57,6 +66,10 @@ btnBackspace.addEventListener('click' , (e)=>{
     }
 })
 
+btnPn.addEventListener('click', (e)=>{
+    display.textContent = display.textContent * -1;
+});
+
 
 btnPlus.addEventListener('click' , (e)=>{
    number1 = Number(display.textContent );
@@ -89,9 +102,10 @@ btnMinus.addEventListener('click' , (e)=>{
      
  })
 
+//=
 btnEquls.addEventListener('click' , (e)=>{
     if (setAdd == false) {
-    number2 = Number(display.textContent);
+    number2 = Number(display.textContent) ;
     }else{
     number1 = Number(display.textContent);
     setAdd = true;
@@ -110,24 +124,14 @@ btnEquls.addEventListener('click' , (e)=>{
             result = number1 / number2;
             break;
         case "%": 
-            result = number1 / number2 ;
+            result = number1 % number2 ;
+        
     }    
     display.textContent = result; 
+    
 })
 
-btnPn.addEventListener('click', (e)=>{
-    display.textContent = display.textContent * -1;
-});
-
-
-let show = document.querySelector('.show');
-
-show.innerHTML = display.textContent;
 
 
 
-console.log(btnNumbers);
-
-
- 
 

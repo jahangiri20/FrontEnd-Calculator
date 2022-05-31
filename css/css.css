@@ -2,17 +2,20 @@ main{
     width: 100%;
     max-width: 380px;
     margin: 0 auto  ;
-    background-color: #191C21;
+    background-color: var(--backgrond_color);
     border-radius: 1rem; 
     padding: 1.5rem;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     transform: translate(0,5%);
    
 }
+
 .calculator{
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    
+  
 }
 .calculator__button{
 
@@ -22,8 +25,7 @@ main{
   
 }
 .btn{
-    color: #E6E8D2;
-    background-color: #191C22;
+    color: var(--body_color);
     border-radius: 0.7rem;
     padding: 1.5rem 0rem;
     cursor: pointer;
@@ -47,6 +49,7 @@ main{
     
 }
 .btn__number{
+    color: var(--body_color);
     
 }
 .btn__key{
@@ -55,14 +58,15 @@ main{
 
 
 .calculator__button .grid2{
-grid-column: 1/-1;
+grid-column: 2/4;
    
 }
 .times{
-    font-weight: 700 
+    font-weight: 700 ;
+    color: var(--body_color);
 }
 .display{
-    background-color: #E6E8D2;
+    background-color: var(--body_color);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 4rem;
@@ -71,15 +75,29 @@ grid-column: 1/-1;
     font-size: 3rem;
     padding: 1rem;
     border-radius: 0.7rem;
-    color: #191C21;
+    color: var(--backgrond_color);
     overflow: hidden;
 }
-.show{
+.history{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1rem;
+    grid-template-rows: 2rem;
     justify-items: end;
     padding: 1rem;
-    color: gray
+    color: gray;
+   
+
 
 }
+
+.calculator__top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.mode{
+    
+    color: #FFE715
+}
+

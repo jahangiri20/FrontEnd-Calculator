@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap"rel="stylesheet"/>
@@ -12,6 +12,9 @@
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"/>
+
+   
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/css.css">
@@ -25,37 +28,43 @@
         <div class="calculator">
             <div class="calculator__top">
                 <div class="times"></div>
+                <button class="mode" onclick="myFunction()"><i class="fas fa-moon fa-3x"></i></button>
             </div>
-            <div class="show"></div>
+            <div class="history">0</div>
             <div class="display">0</div>
             <div class="calculator__button">
                 <button class="btn btn__key btn__clear"><i class="fa-regular fa-c"></i></button>
                 <button class="btn btn__key btn__backspace">&lt;&lt;</button>
                 <button class="btn btn__key btn__pn"><i class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i></button>
-                <button class="btn btn__key btn__percent "><i class="fa-solid fa-percent"></i></button>
-  
+              
+                <button class="btn btn__key btn__div"><i class="fa-solid fa-divide"></i></button>
                 <button class="btn btn__number">7</button>
                 <button class="btn btn__number">8</button>
                 <button class="btn btn__number">9</button>
-                <button class="btn btn__key btn__div"><i class="fa-solid fa-divide"></i></button>
+                <button class="btn btn__key btn__mul"><i class="fa-solid fa-xmark"></i></button>
                
                 <button class="btn btn__number">4</button>
                 <button class="btn btn__number">5</button>
                 <button class="btn btn__number">6</button>
-                <button class="btn btn__key btn__mul"><i class="fa-solid fa-xmark"></i></button>
+                <button class="btn btn__key btn__minus"><i class="fa-solid fa-minus"></i></button>
+               
                 
                 <button class="btn btn__number">1</button>
                 <button class="btn btn__number">2</button>
                 <button class="btn btn__number">3</button>
-                <button class="btn btn__key btn__minus"><i class="fa-solid fa-minus"></i></button>
-                
 
-                <button class="btn btn__key"><i class="fa-regular fa-c"></i> <i class="fa-solid fa-e"></i></button>
-                <button class="btn btn__number">0</button>
-                <button class="btn btn__key btn__point"><i class="fa-solid fa-circle" style="font-size: 0.6rem;" ></i></button>
                 <button class="btn btn__key btn__plus"><i class="fa-solid fa-plus"></i></button>
                 
+                
+
+                
+                <button class="btn btn__number">0</button>
+               
+                
+                
                 <button class="btn btn__key grid2 btn__equls"><i class="fa-solid fa-equals"></i></button>
+                <button class="btn btn__key btn__point"><i class="fa-solid fa-circle" style="font-size: 0.6rem;" ></i></button>
+                
             
             </div>
         </div>

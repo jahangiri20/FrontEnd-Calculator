@@ -1,9 +1,22 @@
 
 :root {
-    --dark: #05152E;
+    
+    --backgrond_color : #191C21;
+    --body_color :  #E6E8D2; 
  
 
 }
+.lightmode{
+    --backgrond_color : #E6E8D2; 
+    --body_color : #191C21;  
+
+}
+.darkmode{
+    --backgrond_color : #191C21;
+    --body_color :  #E6E8D2; 
+
+}
+
 
 *  {
     margin: 0;
@@ -18,7 +31,10 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: #A7BEAE;
+    height: 100%;
+    background-image: linear-gradient(to bottom , #CBCE91FF, #A7BEAE );
+   
+   
    
 }
 html{
@@ -34,6 +50,4 @@ html{
     outline: none;
     background: none;
 }
-
-
 
