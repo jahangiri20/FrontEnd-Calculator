@@ -4,6 +4,11 @@ var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds(
 document.querySelector(".times").innerHTML = time ;
 
 
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("lightmode");
+ }
+
 //calculator
 let display = document.querySelector('.display');
 let btnClear = document.querySelector('.btn__clear');
