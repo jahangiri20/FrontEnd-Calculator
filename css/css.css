@@ -38,6 +38,7 @@ main{
     background-color: #363646;
     box-shadow: 1px 1px 1px gray ;
     
+    
 }
 .btn:active{
     box-shadow: 1px 1px 2px gray inset;
@@ -98,6 +99,10 @@ grid-column: 2/4;
 }
 .mode{
     
-    color: #FFE715
+    color: #FFE715;
+    cursor: pointer;
+}
+.mode :hover{
+    color: white;
 }
 
