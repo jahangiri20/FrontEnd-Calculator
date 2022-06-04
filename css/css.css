@@ -6,23 +6,17 @@ main{
     border-radius: 1rem; 
     padding: 1.5rem;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    transform: translate(0,5%);
-   
+    transform: translate(0,5%); 
 }
-
 .calculator{
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    
-  
 }
 .calculator__button{
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1.5fr ;
     gap: 1.5rem;
-  
 }
 .btn{
     color: var(--body_color);
@@ -33,33 +27,24 @@ main{
     font-size: 1.7rem;
     user-select: none;
 }
-.btn:hover{
-    
+.btn:hover{ 
     background-color: #363646;
-    box-shadow: 1px 1px 1px gray ;
-    
-    
+    box-shadow: 1px 1px 1px gray ;   
 }
 .btn:active{
     box-shadow: 1px 1px 2px gray inset;
     color: #FFE715;
     transform: translateY(2px) translateX(2px);
-    transition: transform 200ms; 
-
-    
-    
+    transition: transform 200ms;    
 }
 .btn__number{
-    color: var(--body_color);
-    
+    color: var(--body_color);   
 }
 .btn__key{
     color: #E0AA6E;
 }
-
-
 .calculator__button .grid2{
-grid-column: 2/4;
+    grid-column: 2/4;
    
 }
 .times{
@@ -86,24 +71,17 @@ grid-column: 2/4;
     justify-items: end;
     padding: 1rem;
     color: gray;
-   
-
-
 }
-
 .calculator__top{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
-.mode i{
-    
+.mode i{ 
     color: white;
     cursor: pointer;
 }
 .mode i:hover{
-   color: yellow;
-   
+   color: yellow; 
 }
 
