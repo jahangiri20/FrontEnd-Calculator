@@ -1,7 +1,13 @@
 //watch
-var today = new Date();
-var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-document.querySelector(".times").innerHTML = time ;
+
+
+setInterval(myFunc, 1000);
+
+function myFunc() {
+  var d = new Date();
+  document.querySelector(".times").innerHTML= 
+  d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+}
 
 
 function myFunction() {
